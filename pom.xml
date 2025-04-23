@@ -18,7 +18,8 @@
     </properties>
 
     <dependencies>
-        <!-- No dependencies required for simple Java programs -->
+        mvn dependency:tree
+
     </dependencies>
 
     <build>
