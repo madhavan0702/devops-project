@@ -2,15 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>Helloworld</artifactId>
+    <artifactId>helloworld</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>HelloWorld</name>
-    <description>Simple Java Application</description>
+    <description>A simple Java application using Spring Boot</description>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -18,12 +19,17 @@
     </properties>
 
     <dependencies>
-        mvn dependency:tree
-
+        <!-- Spring Boot Starter Dependency -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>3.1.1</version>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
+            <!-- Plugin to build executable JAR -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -38,4 +44,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
